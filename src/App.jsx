@@ -1,6 +1,7 @@
 import './App.css';
 import Counter from './Counter';
 import Batsman from './Batsman';
+import Bowler from './Bowler';
 
 function App() {
   function handleClick() {
@@ -20,6 +21,7 @@ function App() {
       <h3>Vai cholen React sikhi</h3>
 
       <Batsman></Batsman>
+      <Bowler></Bowler>
 
       <Counter></Counter>
 

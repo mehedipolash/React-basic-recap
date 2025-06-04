@@ -31,13 +31,14 @@ export default function Batsman() {
       <h3>TAMIM IQBAL</h3>
 
       {runs >= 50 && <p>Congratulations for 50!</p>}
+
       <p>
         <small>fours: {fours} , </small>
         <small>sixes: {sixes}</small>
       </p>
 
-      <button onClick={handleSingle}>singles</button>
-      <button onClick={handleFours}>fours</button>
+      <button onClick={handleSingle}>single</button>
+      <button onClick={handleFours}>four</button>
       <button onClick={handleSix}>six</button>
       <button onClick={freshInnigs}>Refresh</button>
     </div>
