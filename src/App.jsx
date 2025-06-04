@@ -1,5 +1,6 @@
 import './App.css';
 import Counter from './Counter';
+import Batsman from './Batsman';
 
 function App() {
   function handleClick() {
@@ -17,6 +18,8 @@ function App() {
   return (
     <>
       <h3>Vai cholen React sikhi</h3>
+
+      <Batsman></Batsman>
 
       <Counter></Counter>
 

@@ -10,6 +10,7 @@ export default function Counter() {
 
   const counterStyle = {
     border: '3px solid yellow',
+    margin: '30px',
   };
 
   return (
