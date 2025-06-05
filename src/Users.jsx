@@ -1,7 +1,7 @@
 import { use } from 'react';
 
-export default function Users({ fetchUsers }) {
-  const users = use(fetchUsers);
+export default function Users({ x }) {
+  const users = use(x);
   console.log(users);
 
   return (

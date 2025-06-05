@@ -39,7 +39,7 @@ function App() {
       </Suspense>
 
       {/* <Suspense fallback={<h3>Loading...</h3>}>
-        <Users fetchUsers={fetchUsers}></Users>
+        <Users x={fetchUsers}></Users>
       </Suspense> */}
 
       <Batsman></Batsman>
