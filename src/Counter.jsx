@@ -9,8 +9,9 @@ export default function Counter() {
   };
 
   const counterStyle = {
-    border: '3px solid yellow',
+    border: '4px solid purple',
     margin: '30px',
+    borderRadius: '15px',
   };
 
   return (

@@ -21,7 +21,7 @@ export default function Bowler() {
   }
 
   function handleRunConcede() {
-    const newRuns = runs + 4;
+    const newRuns = runs + 2;
     setRuns(newRuns);
     const newBalls = balls + 1;
     setBalls(newBalls);

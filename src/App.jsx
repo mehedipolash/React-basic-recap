@@ -1,9 +1,23 @@
 import './App.css';
 import Counter from './Counter';
+import Users from './Users.jsx';
+import Friends from './Friends.jsx';
 import Batsman from './Batsman';
 import Bowler from './Bowler';
+import { Suspense } from 'react';
+
+const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users').then(
+  res => res.json()
+);
+
+const fetchFriends = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  return res.json();
+};
 
 function App() {
+  const friendsPromise = fetchFriends();
+
   function handleClick() {
     alert('I am clicked');
   }
@@ -18,15 +32,22 @@ function App() {
   };
   return (
     <>
-      <h3>Vai cholen React sikhi</h3>
+      <h3>Vai cholen REACT sikhi</h3>
+
+      <Suspense fallback={<h3>friends are coming for treat...</h3>}>
+        <Friends friendsPromise={friendsPromise}></Friends>
+      </Suspense>
+
+      {/* <Suspense fallback={<h3>Loading...</h3>}>
+        <Users fetchUsers={fetchUsers}></Users>
+      </Suspense> */}
 
       <Batsman></Batsman>
       <Bowler></Bowler>
 
       <Counter></Counter>
 
-      {/* <button>Click me</button> */}
-      <button onClick={handleClick}>Click me</button>
+      {/* different way to use eventlistner me</button>
 
       {/* another way to create function for click given below(not recommended)*/}
       <button
