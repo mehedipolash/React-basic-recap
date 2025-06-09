@@ -29,3 +29,11 @@
 //   const data = res.json()
 //   return data;
 //   }
+
+/**
+ * 1.Event trigger
+ * 2.State
+ * 3.Data load from API
+ * 4.loop through display data
+ * 5.why we use key prop?
+ */
